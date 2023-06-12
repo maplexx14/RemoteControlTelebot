@@ -6,7 +6,7 @@ import webbrowser
 from sound import Sound
 
 #Подключение бота
-bot = telebot.TeleBot("6146519576:AAFv-cv7Tjgil98d8xeQhekjZ2S-ZddzsWU")
+bot = telebot.TeleBot("token")
 print("Бот запущен")
 
 #Работа команды /start
