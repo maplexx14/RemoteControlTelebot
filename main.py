@@ -17,14 +17,13 @@ def start(message):
     btn1 = types.KeyboardButton("Открыть браузер")
     btn2 = types.KeyboardButton("Открыть сайт")
     btn3 = types.KeyboardButton("Открыть приложение")
-    btn4 = types.KeyboardButton("Открыть заранее выставленные приложения")
     btn5 = types.KeyboardButton("Выключить компьютер")
     btn6 = types.KeyboardButton("Перезагрузить компьютер")
     btn7 = types.KeyboardButton("Спящий режим")
     btn8 = types.KeyboardButton("Открыть проводник")
     btn9 = types.KeyboardButton("Изменить громкость")
     markup = types.ReplyKeyboardMarkup(resize_keyboard = True)
-    markup.add(btn, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9)
+    markup.add(btn, btn1, btn2, btn3, btn5, btn6, btn7, btn8, btn9)
     bot.send_message(message.from_user.id, "Это приложение для удаленного доступа", reply_markup = markup)
 
 
@@ -101,14 +100,13 @@ def plat(message):
         btn1 = types.KeyboardButton("Открыть браузер")
         btn2 = types.KeyboardButton("Открыть сайт")
         btn3 = types.KeyboardButton("Открыть приложение")
-        btn4 = types.KeyboardButton("Открыть заранее выставленные приложения")
         btn5 = types.KeyboardButton("Выключить компьютер")
         btn6 = types.KeyboardButton("Перезагрузить компьютер")
         btn7 = types.KeyboardButton("Спящий режим")
         btn8 = types.KeyboardButton("Открыть проводник")
         btn9 = types.KeyboardButton("Изменить громкость")
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(btn, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9)
+        markup.add(btn, btn1, btn2, btn3, btn5, btn6, btn7, btn8, btn9)
         bot.send_message(message.from_user.id, "Это приложение для удаленного доступа", reply_markup=markup)
 
 
