@@ -71,8 +71,6 @@ def plat(message):
         btn4 = types.KeyboardButton("Убрать звук")
         btn5 = types.KeyboardButton("Прибавить звук на максимум")
         btn6 = types.KeyboardButton("Назад")
-
-
         markup.add(btn1, btn2, btn3, btn4, btn5, btn6)
 
         bot.send_message(message.from_user.id, "Выберите действие со звуком", reply_markup=markup)
@@ -132,3 +130,4 @@ def openApp(message):
     os.startfile(str(msg))
 #Зацикливание бота
 bot.polling(none_stop=True, interval=0)
+
